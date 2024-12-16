@@ -1,5 +1,9 @@
 project:
   type: website
+  
+quarto-ignore:
+  - fetch_pubs.py
+  - *.ipynb
       
 website:
   title: "Hansol Lee"
