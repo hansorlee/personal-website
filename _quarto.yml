@@ -1,21 +1,25 @@
 project:
   type: website
-
+      
 website:
-  title: "_brand.yml Demo"
+  title: "Hansol Lee"
   navbar:
     left:
-      - text: "Home"
-        href: index.html
-      - text: "RevealJS"
-        href: index-revealjs.html
-      - text: "Dashboard"
-        href: dashboard.html
-      - text: "Typst"
-        href: index-typst.pdf
+      - text: "About"
+        href: index.html 
+      - text: "Blog"
+        href: blog.html
+      - text: "Research"
+        href: research.html
     tools:
+      - icon: google
+        href: https://scholar.google.com/citations?user=vmcet8AAAAAJ&hl=en
       - icon: github
-        href: https://github.com/stanford-brand-yml/quarto-branded-website
+        href: https://github.com/hansorlee
+      - icon: linkedin
+        href: https://www.linkedin.com/in/hansol-lee-25b044293/
+      - icon: envelope
+        href: mailto:hansol@stanford.edu
 
 format:
   html:

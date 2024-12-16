@@ -1,0 +1,72 @@
+---
+title: "Analyzing Test Response Patterns with IRT"
+author: "Hansol Lee"
+date: "2024-12-15"
+categories: ["Psychometrics", "Item Response Theory", "Tutorial"]
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+# Introduction
+
+Item Response Theory (IRT) is widely used in psychometrics to model the relationship between an individual's latent ability and their responses to test items. In this post, I’ll walk through a basic example of fitting an IRT model to simulated data and visualizing item characteristics.
+
+# Simulated Data
+
+We’ll generate simulated test response data for 200 respondents and 10 items using the `mirt` package in R.
+
+```{r}
+#| echo: true
+# Simulate item response data
+library(mirt)
+set.seed(123)
+n_items <- 10
+n_people <- 200
+sim_data <- simdata(a = rep(1, n_items), d = seq(-2, 2, length.out = n_items), N = n_people, itemtype = "2PL")
+head(sim_data)
+```
+
+# Fitting an IRT Model
+Next, we’ll fit a 2-parameter logistic (2PL) IRT model to the simulated data.
+
+```{r}
+#| echo: true
+# Fit a 2PL model
+mod <- mirt(sim_data, 1, itemtype = "2PL")
+summary(mod)
+```
+
+# Visualizing Item Characteristic Curves
+
+Item characteristic curves (ICCs) show the probability of a correct response as a function of latent ability. Let’s plot the ICCs for our items.
+```{r}
+#| echo: false
+# Plot item characteristic curves
+plot(mod, type = 'trace', items = 1:5, main = "Item Characteristic Curves")
+```
+
+
+# Visualizing Test Information
+
+The test information curve shows how much information the test provides across different levels of ability. Let’s visualize this next.
+```{r}
+#| echo: false
+# Plot test information curve
+plot(mod, type = 'info', main = "Test Information Curve")
+```
+
+# Insights
+
+From these analyses, we can observe:
+
+- Item Difficulty: Items with higher difficulty thresholds are more informative at higher ability levels.
+
+- Test Information: The test provides the most information for respondents with abilities around 0, which aligns with the range of item difficulties.
+
+This example demonstrates how IRT can be used to evaluate test items and understand the relationship between ability and response patterns.
+
+# Conclusion
+
+IRT is a powerful tool for understanding test performance and optimizing assessments. Future posts will dive deeper into differential item functioning (DIF) and other advanced topics in psychometric analysis.

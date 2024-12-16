@@ -1,0 +1,11 @@
+---
+title: "Research"
+format: html
+---
+
+
+This list is generated from my [Google Scholar profile](https://scholar.google.com/citations?user=vmcet8AAAAAJ&hl=en) as of December 15, 2024.
+
+
+```{=markdown}
+{{< include research/publications.md >}}

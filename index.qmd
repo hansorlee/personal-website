@@ -1,40 +1,26 @@
 ---
-title: "Brand"
-format:
-  html: 
-    other-links:
-      - href: dashboard.qmd
-        icon: speedometer
-        text: Dashboard
-  typst: 
-    output-file: index-typst.pdf
-  revealjs:
-    output-file: index-revealjs.html
-  dashboard: 
-    output-file: index-dashboard.html
+title: "Hansol Lee"
+about:
+  id: hero-heading
+  template: jolla
+  image: assets/hansol.jpg
+  links:
+    - icon: google
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=vmcet8AAAAAJ&hl=en
+    - icon: github
+      text: Github
+      href: https://github.com/hansorlee
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/hansol-lee-25b044293/
+    - icon: envelope
+      text: Email
+      href: mailto:hansol@stanford.edu
 ---
+:::{#hero-heading}
+Hello! I’m Hansol Lee, a PhD candidate in Education Data Science at Stanford University, where I am advised by Prof. Ben Domingue. I hold a BA and MS in Computer Science from Cornell University. My research focuses on the intersection of machine learning, psychometrics, and education, exploring how computational methods can better model and support human learning and decision-making.
 
-## Overview
-
-This is a document themed using [**brand.yml**](https://posit-dev.github.io/brand-yml/)
-
-::: {.content-visible when-format="html:js"}
-
-## Mermaid Diagram
-
-The following is a Mermaid diagram with branding applied:
-```{mermaid}
-%%| echo: false
-%%| fig-align: center
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
+I am passionate about leveraging computational approaches to solve real-world challenges, particularly those that advance equity and fairness in education. Beyond academia, I enjoy coding projects, learning new languages, and exploring nature.
 :::
 
-## Subheading
-
-{{< lipsum 1 >}}
