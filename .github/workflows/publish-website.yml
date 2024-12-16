@@ -26,7 +26,7 @@ jobs:
     - name: "Set up Quarto"
       uses: quarto-dev/quarto-actions/setup@v2
       with:
-        version: "latest"  # Change to pre-release if required
+        version: "1.7.3"  
 
     - name: "Set up R"  # Optional step, needed if you use R in your project
       uses: r-lib/actions/setup-r@v2
