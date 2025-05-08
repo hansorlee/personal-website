@@ -55,11 +55,11 @@ jobs:
       uses: quarto-dev/quarto-actions/render@v2
 
     - name: Upload Pages artifact
-      uses: actions/upload-pages-artifact@v2
+      uses: actions/upload-pages-artifact@v3
       with: 
         retention-days: 1
         path: '_site'
 
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v4
+      uses: actions/deploy-pages@v2
