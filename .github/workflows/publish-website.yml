@@ -45,6 +45,16 @@ jobs:
           gfortran \
           build-essential \
           pkg-config
+          
+    - name: Install system dependencies for R packages
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libpng-dev libjpeg-dev
+    
+    
+    - name: Install R dependencies
+      run: |
+        Rscript -e 'install.packages(c("png", "jpeg", "latticeExtra"), repos = "https://cloud.r-project.org")'
 
     - name: "Install required R packages"
       run: |
