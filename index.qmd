@@ -19,8 +19,9 @@ about:
       href: mailto:hansol@stanford.edu
 ---
 :::{#hero-heading}
-Hello! I’m Hansol Lee, a PhD candidate in Education Data Science at Stanford University, where I am advised by Prof. Ben Domingue. I hold a BA and MS in Computer Science from Cornell University. My research focuses on the intersection of machine learning, psychometrics, and education, exploring how computational methods can better model and support human learning and decision-making.
 
-I am passionate about leveraging computational approaches to solve real-world challenges, particularly those that advance equity and fairness in education. Beyond academia, I enjoy coding projects, learning new languages, and exploring nature.
+Hi there! I’m Hansol Lee, a Ph.D. candidate in Education Data Science at Stanford University, where I’m advised by Prof. Ben Domingue. I’m curious about how people learn and make decisions in educational settings, and how we can design AI systems that truly support those processes. My work brings together ideas from AI, human behavior, and education to explore these questions in real-world contexts.
+
+I care about building technology that is not only smart but also thoughtful. I focus on creating tools that are useful, fair, and grounded in how people actually live and learn. Before Stanford, I studied Computer Science at Cornell, where I earned both my B.A. and M.S. Outside of research, I enjoy tinkering with side projects, learning new things (especially languages), and heading out for long walks or hikes.
 :::
 
