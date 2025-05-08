@@ -55,7 +55,7 @@ jobs:
       uses: quarto-dev/quarto-actions/render@v2
 
     - name: Upload Pages artifact
-      uses: actions/upload-pages-artifact@v2
+      uses: actions/upload-pages-artifact@v4
       with: 
         retention-days: 1
         path: '_site'
